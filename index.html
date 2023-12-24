@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+    <!--LOCOMOTIVE LINK (IT WILL WORK AS A CDN)-->
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+
+    <!--GSAP AND scrollTrigger LIBRARY LINKS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+     
+
+    
+
+</head>
+<body>
+    <div id="main">
+        <!-- header  -->
+        <div id="header">
+            <div class="container">
+
+
+                
+                <nav>
+                    <img src="" alt="">
+
+                    <ul id="sidemenu">
+                        <li><a href="#header"> Home </a></li>
+                        <li><a href="#about"> About </a></li>
+                        <li><a href="#services"> Services </a></li>
+                        <li><a href="#portfolio"> Portfolio </a></li>
+                        <li><a href="#contact"> Contact </a></li>
+                        <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>Director / Cinematographer</p>
+                    <h1>Hello, <br>
+                        I'm <span>Bal</span> Kumar <span>Magar</span>.</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- about  -->
+        <div id="about">
+
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I'm Bal Kumar Magar. I'm a skilled director, cinematographer and post producer.
+                            I craft narratives that resonate authentically, capturing emotional depth on both sides of the lens. 
+                            My collaborative spirit, innovative approach,
+                            and commitment to pushing creative boundaries come together to deliver compelling cinematic experiences that leave a lasting impact.
+                        </p>
+                        <div class="tab-titles">
+                            <div class="tab-links active-link" onclick="opentab('skills')"> Skills </div>
+                            <div class="tab-links" onclick="opentab('experience')"> Experience </div>
+                            <!-- <div class="tab-links" onclick="opentab('education')"> Education </div> -->
+                        </div>
+    
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> Director </li>
+                                <li> <span> Cinematographer </span> </li>
+                                <li> Cameraman </li>
+                                <li> <span> Post Producer </span> </li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> 10+ years of Photography </li>
+                                <li> <span> 10+ years of videography </span> </li>
+                                <li> 8 years of Editing </li>
+                                <li> <span> 8 years of Graphic Designing </span> </li>
+                            </ul>
+                        </div>
+    
+                        <!-- <div class="tab-contents" id="education">
+                            <ul>
+                                <li> 1st year completion of high school </li>
+                                <li> <span> completion of secondary school </span> </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="about-col-2">
+                        <img src="/images/user-2.jfif" alt="">
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- services  -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+
+                    <div>
+                        <i class="fa-solid fa-video"></i>
+                        <h2> Video Editing </h2>
+                        
+                        <!-- <a href="#">Learn More</a> -->
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-clapperboard"></i>
+                        <h2> Direction </h2>
+                        
+                        <!-- <a href="#">Learn More</a> -->
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-camera"></i>
+                        <h2> Photography </h2>
+                        
+                        <!-- <a href="#">Learn More</a> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio  -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+
+                    <div class="work">
+                        <!-- add videos profile  -->
+                        <img src="/images/work-111.jpg">
+                        <div class="layer">
+
+                            <h3> <b> 100+ music video </b> </h3>
+                            <a href="#"> <i class="fa-solid fa-photo-film"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/images/work-222.png">
+                        <div class="layer">
+
+                            <h3> <b> 3 Films </b> </h3>
+                            <a href="#"> <i class="fa-solid fa-photo-film"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/images/work-333.png">
+                        <div class="layer">
+
+                            <h3> <b> 10+ Short Films </b> </h3>
+                            <a href="#"> <i class="fa-solid fa-photo-film"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="/images/work-444.png">
+                        <div class="layer">
+
+                            <h3> <b> 1000+ Wedding shoots </b> </h3>
+                            <a href="#"> <i class="fa-solid fa-photo-film"></i> </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <a href="#" class="btn">See More</a> -->
+
+            </div>
+        </div>
+
+        <!-- featured works  -->
+        <!--  
+            <div class="container">
+
+                <h1 class="sub-title"> Featured Works </h1>
+
+            </div>
+        </div> -->
+
+
+
+        <!-- contact  -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me </h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i> balkumarmagar@gmail.com </p>
+                        <p> <i class="fa-solid fa-phone"></i> +977 9840027281</p>
+
+                        <div class="social-icons">
+
+                            <a href="https://www.youtube.com/@creationhouse7681"> <i class="fa-brands fa-youtube"></i> </a>
+                            <a href="https://www.facebook.com/ok.hk.969"> <i class="fa-brands fa-square-facebook"></i> </a>
+                            <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
+
+                        </div>
+
+                        <a href="/images/CV_face.pdf" download class="btn btn2" >Download CV</a>
+
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2"> Submit </button>
+                        </form>
+                        <span id="msg">  </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p> Copyright &copy; Bal Portfolio. </p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="/js/script.js"></script>
+
+    <!-- google sheets  -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwmErvn17CxeYmll2LmhSzF7lAhCugPTJ2yE5jrTXQl3s7Vm_WkJ9Qw3AvXTjwvntfm8g/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        // for resetting 
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+<!-- 
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script>
+
+        //PRELOADER ANIMATION
+        function counter(){
+            var count = setInterval(function(){
+                var c = parseInt($(".counter").text());
+                $(".counter").text((++c).toString());
+                if(c == 100){
+                clearInterval(count);
+                $(".counter").addClass('hide')
+                $(".preloader").addClass('active')
+                $(".preloader::before").addClass('hide')
+                }
+            },30)//COUNTDOWN SPEED IN MILLISECOND
+            }
+            counter();
+        
+        
+        //SCROLL LOCOMOTIVE CODES IMPORTED
+        function loco(){
+            /*THIS IS ALL FOR LOCOMOTIVE SCROLL EFFECT*/
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+        
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector("#main"),
+            smooth: true
+        });
+        // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+        locoScroll.on("scroll", ScrollTrigger.update);
+        
+        // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+        ScrollTrigger.scrollerProxy("#main", {
+            scrollTop(value) {
+            return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+            }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+            getBoundingClientRect() {
+            return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+            },
+            // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+            pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+        });
+        
+        // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+        
+        // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+        ScrollTrigger.refresh();
+        
+        }
+        loco()//CALLING FUNCTION LOCO
+  
+
+    </script>
+
+-->
+    
+
+</body>
+</html>
